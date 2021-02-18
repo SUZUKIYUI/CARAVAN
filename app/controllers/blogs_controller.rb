@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   def index
+    @blogs=Blog.all
   end
 
   def show
@@ -17,7 +18,7 @@ class BlogsController < ApplicationController
 
   def edit
   end
-  
+
 # --------------ここから下には書いちゃダメ！！-------------------
   private
   def blog_params
